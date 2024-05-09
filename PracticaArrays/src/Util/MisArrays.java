@@ -1,5 +1,7 @@
 package Util;
 
+import java.util.Arrays;
+
 public class MisArrays {
 	/**
 	 * Esto es un metodo que te devuelve la media de una array, con numeros del 1 al 10
@@ -16,4 +18,19 @@ public class MisArrays {
         }
         return (int) suma / notas.length;
     }
+	
+	
+	/**
+	 * Esto es un metodo que devuelve la mediana de una array con numeros del 1 al 10 
+	 * @param notas
+	 * @return devuelve un int que es la mediana de numeros comprendidos en una array
+	 */
+	
+	  public static int mediana(int[] notas) {
+	        Arrays.sort(notas);
+	        if (notas.length % 2 == 0)
+	            return ((int) notas[notas.length / 2 - 1] + (int) notas[notas.length / 2]) / 2;
+	        else
+	            return (int) notas[notas.length / 2];
+	    }
 }

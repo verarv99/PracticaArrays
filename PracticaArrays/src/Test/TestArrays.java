@@ -3,16 +3,17 @@ package Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.Assert;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import Util.MisArrays;
 
 class TestArrays {
-	int[] array;
+static	int[] array;
 
-	@BeforeEach 
-	void init() {
+	@BeforeAll
+static	void init() {
 		array = new int[]{10, 9, 8, 7, 6};
 	}
 	
