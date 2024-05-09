@@ -33,4 +33,18 @@ public class MisArrays {
 	        else
 	            return (int) notas[notas.length / 2];
 	    }
+	  /**
+	   * Esto es un metodo que te devuelve el numero mayor de una array
+	   * @param notas
+	   * @return devuelve un int que es la mayor nota de la clase 
+	   */
+	  public static int maxima(int[] notas) {
+	        int max = notas[0];
+	        for (int nota : notas) {
+	            if (nota > max) {
+	                max = nota;
+	            }
+	        }
+	        return max;
+	    }
 }
