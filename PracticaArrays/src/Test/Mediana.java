@@ -15,7 +15,9 @@ static int[] array;
 	array = new int[]{10, 9, 8, 7, 6};
 }
 
-
+/**
+ * esto es un test que comprueba que hace bien el metodo mediana
+ */
 	@Test
 	void test() {
 	int medianaEsperada = 8;

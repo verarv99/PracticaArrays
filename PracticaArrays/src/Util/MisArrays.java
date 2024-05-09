@@ -47,4 +47,18 @@ public class MisArrays {
 	        }
 	        return max;
 	    }
+	  /**
+	   * Esto es un metodo que devuelve el numero menor dentro de una array
+	   * @param notas
+	   * @return devuelve un int con el menor numero de una array
+	   */
+	  public static int minima(int[] notas) {
+	        int min = notas[0];
+	        for (int nota : notas) {
+	            if (nota < min) {
+	                min = nota;
+	            }
+	        }
+	        return min;
+	    }
 }
